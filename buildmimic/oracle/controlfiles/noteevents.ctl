@@ -2,7 +2,7 @@ OPTIONS (
 skip=1,
 errors=0,
 direct=true,
-multithreading=true 
+multithreading=true
 )
 LOAD DATA
 INFILE 'NOTEEVENTS.csv' "str '\n'"
@@ -14,7 +14,7 @@ FIELDS TERMINATED BY ','
 OPTIONALLY ENCLOSED BY '"' AND '"'
 TRAILING nullcols
 (
-ROW_ID, 
+ROW_ID,
 SUBJECT_ID,
 HADM_ID,
 CHARTDATE DATE "YYYY-MM-DD HH24:MI:SS",
@@ -24,5 +24,5 @@ CATEGORY,
 DESCRIPTION,
 CGID,
 ISERROR,
-TEXT 
+TEXT
 )
